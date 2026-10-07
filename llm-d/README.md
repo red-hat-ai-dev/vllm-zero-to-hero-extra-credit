@@ -37,6 +37,9 @@ memory for the model and its working state. The resources depend on the serving
 pattern. The multi-node patterns we show later need more hardware and networking
 than the local setup used earlier in the series.
 
+The conceptual baseline was reviewed against llm-d v0.10 documentation on
+2026-10-07; see [validation scope](../SUPPORT.md).
+
 All diagrams are conceptual. Worker counts and layouts explain the mechanism;
 they are not deployment recommendations or benchmark results.
 

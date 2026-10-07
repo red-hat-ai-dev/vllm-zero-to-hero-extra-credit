@@ -9,6 +9,8 @@ Extra credit is where we explore more of what we can do with vLLM. Each topic
 has its own directory, README, and supporting material, so you can pick the
 lesson that interests you.
 
+See [tested support and validation](SUPPORT.md) for the exact platforms, versions, and remaining checks.
+
 ## Choose a topic
 
 | Topic | What you will learn | Start here |
