@@ -13,6 +13,9 @@ where requests run and how the work is divided.
 In this lesson, we're going to follow the requests through the system. The
 diagrams show the moving parts without requiring you to build a cluster first.
 
+For a guide to the files and the scope of this explainer, see
+[Behind the scenes](../docs/BEHIND_THE_SCENES.md).
+
 ## What you will learn
 
 - Where llm-d fits alongside vLLM and Kubernetes

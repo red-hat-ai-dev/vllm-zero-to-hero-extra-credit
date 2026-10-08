@@ -18,6 +18,9 @@ lesson that interests you.
 The llm-d lesson is a visual explainer. You do not need a Kubernetes cluster or
 multiple accelerators to follow along.
 
+For how these lessons are organized and what the diagrams represent, read
+[Behind the scenes](docs/BEHIND_THE_SCENES.md).
+
 ## Questions or feedback
 
 Found something unclear or have an idea for another lesson?
