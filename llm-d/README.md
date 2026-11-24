@@ -112,13 +112,13 @@ actual prompt tokens and the server's cache rules.
 llm-d can estimate cache locality from prior routing, or use model-server
 events to track cache blocks more precisely. Entries can be evicted, so an
 estimate is not a promise that every block is still present. See
-[prefix-cache aware routing](https://llm-d.ai/docs/architecture/advanced/kv-management/prefix-cache-aware-routing).
+[prefix-cache aware routing](https://llm-d.ai/docs/architecture/kv-management/prefix-cache-aware-routing).
 
 The picker follows a configurable **filter → score → pick** process: narrow
 the eligible endpoints, evaluate the candidates, then choose a destination.
 The configuration decides how cache affinity and load influence that choice.
 A warm cache can save work, but a busy worker can still make the user wait.
-See the [request scheduler](https://llm-d.ai/docs/architecture/core/router/epp/scheduling).
+See the [request scheduler](https://llm-d.ai/docs/architecture/router/scheduling).
 
 ## 4. Separate prefill from decode
 
@@ -158,7 +158,7 @@ testing, but shouldn't be treated as equivalent production performance.
 
 Disaggregation is optional. Some requests can use a decoder-only path, and
 ordinary combined workers remain useful. The full details are in
-[disaggregated serving](https://llm-d.ai/docs/architecture/advanced/disaggregation).
+[disaggregated serving](https://llm-d.ai/docs/architecture/disaggregation).
 
 ## 5. Choose what you need to scale
 
@@ -225,7 +225,7 @@ Adding a replica takes time: it needs an accelerator, model weights, and a ready
 server. Routing chooses among available workers; autoscaling changes how many
 workers are available. Kubernetes autoscaling integrations can consume
 inference metrics, but they need to be configured. See
-[llm-d autoscaling](https://llm-d.ai/docs/architecture/advanced/autoscaling).
+[llm-d autoscaling](https://llm-d.ai/docs/architecture/autoscaling).
 
 Small workloads might be served well by a single vLLM instance. Larger ones
 can benefit from additional replicas, smarter placement, or specialized
